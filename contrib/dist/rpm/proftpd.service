@@ -9,7 +9,6 @@ Environment = PROFTPD_OPTIONS=
 EnvironmentFile = -/etc/sysconfig/proftpd
 ExecStartPre = /usr/sbin/proftpd --configtest
 ExecStart = /usr/sbin/proftpd $PROFTPD_OPTIONS
-ExecReload = /bin/kill -HUP $MAINPID
 PIDFile = /run/proftpd/proftpd.pid
 
 [Install]
